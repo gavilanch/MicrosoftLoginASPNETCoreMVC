@@ -1,0 +1,10 @@
+﻿<h3>Login</h3>
+
+@if (ViewData.Keys.Contains("message"))
+{
+    <p style="color: red">
+        @ViewData["message"]
+    </p>
+}
+
+<a class="btn btn-success" asp-action="ExternalLogin" asp-route-provider="Microsoft">Continue with Microsoft</a>
